@@ -1,9 +1,9 @@
 import React from 'react';
 import PostItem from './PostItem';
 
-function PostList({ posts, onEdit, onDelete }) {
+function PostList({ posts, onEdit, onDelete, user, refreshPosts }) {
   if (posts.length === 0) {
-    return <p>No blog posts found. Create one above!</p>;
+    return <p className="empty-state">No blog posts found. Be the first to create one!</p>;
   }
 
   return (
@@ -14,6 +14,8 @@ function PostList({ posts, onEdit, onDelete }) {
           post={post} 
           onEdit={onEdit} 
           onDelete={onDelete} 
+          user={user}
+          refreshPosts={refreshPosts}
         />
       ))}
     </div>
