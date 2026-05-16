@@ -27,3 +27,8 @@ export default defineConfig({
 //         proxy_set_header Host $host;
 //     }
 // }
+
+// sudo chmod -R 755 /home/ubuntu/Task-Management-System
+// sudo chown -R ubuntu:ubuntu /home/ubuntu/Task-Management-System
+// sudo chmod 755 /home/ubuntu
+
